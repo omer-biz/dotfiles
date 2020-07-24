@@ -21,3 +21,6 @@ set background=dark
 set tabstop=4
 
 setlocal spell spelllang=en_us
+
+" transparent background
+hi Normal guibg=NONE ctermbg=NONE

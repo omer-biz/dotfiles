@@ -12,6 +12,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'vimwiki/vimwiki'
+Plug 'chrisbra/Colorizer'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 
@@ -24,3 +26,6 @@ setlocal spell spelllang=en_us
 
 " transparent background
 hi Normal guibg=NONE ctermbg=NONE
+
+" no line wrap
+set nowrap

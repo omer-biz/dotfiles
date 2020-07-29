@@ -7,6 +7,8 @@ do
 	echo "[*] linking $file ..."
 done
 
+# fish config
+ln -sr config.fish ~/.config/fish/
 
 echo "[!] Done .."
 

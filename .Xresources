@@ -2,7 +2,7 @@
 *.alpha: 0.7
 
 dwm.selbgcolor: #7c6f64
-dwm.selfbcolor: #fbf1c7
+dwm.selfgcolor: #282828
 dwm.normbgcolor: #282828
 dwm.normfgcolor: #fbf1c7
 dwm.selbordercolor: #fbf1c7

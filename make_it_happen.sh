@@ -26,7 +26,7 @@ done
 
 # fish config
 # ln -sr config.fish ~/.config/fish/
-link cnofig.fish ~/.config/fish
+link config.fish ~/.config/fish
 
 echo "[#] Done .."
  

@@ -14,6 +14,7 @@ Plug 'morhetz/gruvbox'
 Plug 'vimwiki/vimwiki'
 Plug 'chrisbra/Colorizer'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
@@ -29,3 +30,5 @@ hi Normal guibg=NONE ctermbg=NONE
 
 " no line wrap
 set nowrap
+
+set paste

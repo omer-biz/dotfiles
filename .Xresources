@@ -1,8 +1,9 @@
 *.font: Ubuntu Mono:pixelsize=17:antialias=true:autohint=ture;
-*.alpha: 0.7
+*.alpha: 0.8
 
+dwm.showbar: 0
 dwm.selbgcolor: #7c6f64
-dwm.selfgcolor: #282828
+dwm.selfgcolor: #fbf1c7
 dwm.normbgcolor: #282828
 dwm.normfgcolor: #fbf1c7
 dwm.selbordercolor: #fbf1c7

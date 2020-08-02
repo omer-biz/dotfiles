@@ -21,7 +21,10 @@ xbindkeys --poll-rc
 
 # for java
 export AWT_TOOLKIT=MToolkit
-wmname "LG3D"
+wmname compiz
+
+# notification
+dunst &
 
 # window manger
 while true; do

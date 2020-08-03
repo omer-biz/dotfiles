@@ -30,5 +30,3 @@ hi Normal guibg=NONE ctermbg=NONE
 
 " no line wrap
 set nowrap
-
-set paste

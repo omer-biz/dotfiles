@@ -64,9 +64,12 @@
 ## Control + mouse button 2 release event starts rxvt
 #"rxvt"
 #  Control + b:2 + Release
-#
-#  don't forget to
-#  xbindkeys --poll-rc
+
+
+#########################
+#  don't forget to		#
+#  xbindkeys --poll-rc	#
+#########################
 
 "amixer set Master 5%+; pkill -RTMIN+23 dwmblocks" 
 	XF86AudioRaiseVolume
@@ -76,6 +79,9 @@
 
 "pamixer -t; pkill -RTMIN+23 dwmblocks"
 	XF86AudioMute
+
+"betterlockscreen -l dimblur"
+	Control+Alt + l
 
 ##################################
 # End of xbindkeys configuration #

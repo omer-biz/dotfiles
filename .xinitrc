@@ -1,8 +1,9 @@
 # compositor
 picom &
 
-# wallpaper
-feh --bg-scale ~/.wall.jpg &
+# wallpapers
+# feh --bg-scale ~/.wall.jpg &
+~/.local/bin/wall.sh
 
 # x resources !!?
 xrdb ~/.Xresources
@@ -24,7 +25,7 @@ export AWT_TOOLKIT=MToolkit
 wmname compiz
 
 # notification
-dunst &
+# dunst &
 
 # window manger
 while true; do

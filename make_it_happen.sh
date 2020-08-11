@@ -45,4 +45,7 @@ link config.fish ~/.config/fish/
 # gtk3
 link settings.ini ~/.config/gtk-3.0/
 
+# nvim
+link init.vim ~/.config/nvim/
+
 echo 

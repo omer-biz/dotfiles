@@ -14,6 +14,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'chrisbra/Colorizer'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'plasticboy/vim-markdown'
+Plug 'jiangmiao/auto-pairs'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -22,7 +24,7 @@ set background=dark
 
 set tabstop=4
 set shiftwidth=4
-set expandtab
+" set expandtab
 
 setlocal spell spelllang=en_us
 

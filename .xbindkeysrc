@@ -87,8 +87,8 @@
 "kill $(pidof picom)"
 	Control+Alt + p
 
-# "st"
-# 	Shift+Alt + backslash
+"st"
+ 	Shift+Alt + backslash
 # 
 # "~/exec.sh"
 # 	Mod4 + Super_L + Space + release

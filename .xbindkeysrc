@@ -87,7 +87,7 @@
 "kill $(pidof picom)"
 	Control+Alt + p
 
-"st"
+"st -e tmux"
  	Shift+Alt + backslash
 # 
 # "~/exec.sh"

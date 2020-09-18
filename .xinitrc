@@ -1,5 +1,5 @@
 # compositor
-# picom &
+picom &
 
 # wallpapers
 # feh --bg-scale ~/.wall.jpg &

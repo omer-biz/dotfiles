@@ -38,7 +38,7 @@ URxvt.font: xft:Ubuntu Mono:size-17
 urxvt.scrollBar: false
 
 
-dwm.showbar: 0
+! dwm.showbar: 0
 dwm.selbgcolor: #fbf1c7
 dwm.selfgcolor: #32302f
 dwm.normbgcolor: #32302f

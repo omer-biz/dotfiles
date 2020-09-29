@@ -18,6 +18,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+Plug 'lambdalisue/nerdfont.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -26,12 +30,27 @@ set background=dark
 
 set tabstop=4
 set shiftwidth=4
+set showtabline=2
 " set expandtab
 
-setlocal spell spelllang=en_us
+" setlocal spell spelllang=en_us
 
 " transparent background
 hi Normal guibg=NONE ctermbg=NONE
 
 " no line wrap
 set nowrap
+
+nmap <Space> <C-w>
+nmap <C-c> :ColorHighlight<CR>
+nmap ` :Fern . -drawer -toggle<CR>
+
+"  Ctlr-Bs
+imap <C-BS> <C-W>
+
+let g:fern#renderer = "nerdfont"
+let g:airline_theme = 'onedark'
+
+
+" airline config
+let g:airline#extensions#tabline#enabled = 1

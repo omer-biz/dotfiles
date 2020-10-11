@@ -68,6 +68,14 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
+# fzf
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+
+[ -f "$HOME/.config/zsh/fzf_completion.zsh" ] && source "$HOME/.config/zsh/fzf_completion.zsh"
+[ -f "$HOME/.config/zsh/fzf_key_bindings.zsh" ] && source "$HOME/.config/zsh/fzf_key_bindings.zsh"
+
+# PATH
+PATH=$PATH:$HOME/.config/dwm
 
 # autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

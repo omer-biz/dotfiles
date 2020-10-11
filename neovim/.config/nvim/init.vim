@@ -33,7 +33,7 @@ set shiftwidth=4
 set showtabline=2
 " set expandtab
 
-" setlocal spell spelllang=en_us
+setlocal spell spelllang=en_us
 
 " transparent background
 hi Normal guibg=NONE ctermbg=NONE
@@ -51,6 +51,11 @@ imap <C-BS> <C-W>
 let g:fern#renderer = "nerdfont"
 let g:airline_theme = 'onedark'
 
+" use system clipboard
+set clipboard+=unnamedplus
+
 
 " airline config
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_detect_spell=0
+let g:airline_detect_spelllang=0

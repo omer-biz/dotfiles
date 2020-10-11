@@ -81,14 +81,39 @@
 "pamixer -t; pkill -RTMIN+23 dwmblocks"
 	XF86AudioMute
 
-"betterlockscreen -l dimblur"
+# media keys
+"playerctl play-pause"
+	XF86AudioPlay
+
+"playerctl previous"
+	XF86AudioPrev
+
+"playerctl next"
+	XF86AudioNext
+
+"playerctl stop"
+	XF86AudioStop
+
+# lockscreen
+"slock"
 	Control+Alt + l
 
+# kill compositor
 "kill $(pidof picom)"
 	Control+Alt + p
 
-"st -e tmux"
+"alacritty"
  	Shift+Alt + backslash
+
+# screenshots
+"shotgun ~/pictures/screenshots/$(date '+%b_%d_%I:%M_%p').png"
+	Print
+
+"pcmanfm"
+	Shift+Alt + f
+
+"~/.local/bin/wall.sh"
+	Control + w
 # 
 # "~/exec.sh"
 # 	Mod4 + Super_L + Space + release

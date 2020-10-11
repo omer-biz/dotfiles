@@ -3,7 +3,8 @@ picom &
 
 # wallpapers
 # feh --bg-scale ~/.wall.jpg &
-~/.local/bin/wall.sh
+# ~/.local/bin/wall.sh
+nitrogen --random --restore
 
 # x resources !!?
 xrdb ~/.Xresources
@@ -25,7 +26,10 @@ export AWT_TOOLKIT=MToolkit
 wmname compiz
 
 # notification
-# dunst &
+dunst &
+
+# autolock screen
+# xautolock -time 5 -locker slock
 
 # window manger
 while true; do

@@ -1,0 +1,9 @@
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+
+alias \
+	ls="lsd" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \

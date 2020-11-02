@@ -7,3 +7,13 @@ alias \
 	ls="lsd" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
+
+alias \
+	cf="cd dotfiles/scripts/.local/scripts/"
+
+# git alias
+
+alias \
+	gs="git status" \
+	gca="git commit -a "
+

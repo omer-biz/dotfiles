@@ -98,21 +98,28 @@
 "slock"
 	Control+Alt + l
 
+# mount devce
+"$HOME/.local/scripts/mount.sh"
+	Control+Alt+ m
+
 # kill compositor
-"kill $(pidof picom)"
+# "kill $(pidof picom); notify-send 'killed compositor'"
+"$HOME/.local/scripts/toggle_picom.sh"
 	Control+Alt + p
 
 "alacritty"
  	Shift+Alt + backslash
 
 # screenshots
-"shotgun ~/pictures/screenshots/$(date '+%b_%d_%I:%M_%p').png"
+# "shotgun ~/pictures/screenshots/$(date '+%b_%d_%I:%M_%p').png"
+"flameshot gui"
 	Print
 
-"pcmanfm"
-	Shift+Alt + f
+# "pcmanfm"
+# 	Shift+Alt + f
 
-"~/.local/bin/wall.sh"
+# "~/.local/bin/wall.sh"
+"feh -z --bg-scale $HOME/wallpapers"
 	Control + w
 # 
 # "~/exec.sh"

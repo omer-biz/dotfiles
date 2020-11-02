@@ -1,10 +1,11 @@
 # compositor
 picom &
 
-# wallpapers
-# feh --bg-scale ~/.wall.jpg &
-# ~/.local/bin/wall.sh
-nitrogen --random --restore
+# choose wallpapers randomly
+# feh -z --bg-scale $HOME/wallpapers
+feh -z --bg-scale $HOME/wallpapers/wallhaven-lm6lr2_1920x1080.png
+
+# nitrogen --random --restore
 
 # x resources !!?
 xrdb ~/.Xresources
@@ -18,7 +19,7 @@ xinput set-prop "ETPS/2 Elantech Touchpad" 280 1
 # setup the bar
 dwmblocks &
 
-# set xorg shortcuts I think
+# set xorg shortcuts 
 xbindkeys --poll-rc
 
 # for java
@@ -28,12 +29,19 @@ wmname compiz
 # notification
 dunst &
 
+nm-applet &
+flameshot &
+
 # autolock screen
 # xautolock -time 5 -locker slock
 
+# sxhkd &
+# bspwm
+
+
 # window manger
 while true; do
-	# logging errors
-	dwm 2> ~/.dwm.log
+# logging errors
+ dwm 2> ~/.dwm.log
 done
 	

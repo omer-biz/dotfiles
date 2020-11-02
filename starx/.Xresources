@@ -33,7 +33,7 @@ URxvt.color15: #ebdbb2
 
 
 ! font
-URxvt.font: xft:Ubuntu Mono:size-17
+URxvt.font: xft:Ubuntu Mono:size-17,xft:Nerd Font
 
 urxvt.scrollBar: false
 

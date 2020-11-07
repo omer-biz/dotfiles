@@ -22,9 +22,15 @@ Plug 'lambdalisue/nerdfont.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 call plug#end()
 
+" markdown
+let g:mkdp_auto_start = 1
+let g:mkdp_auto_close = 1
+let g:mkdp_command_for_global = 1
+let g:mkdp_browser = 'qutebrowser'
 colorscheme gruvbox 
 set background=dark 
 

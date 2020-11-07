@@ -76,7 +76,7 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 [ -f "$HOME/.config/zsh/fzf_key_bindings.zsh" ] && source "$HOME/.config/zsh/fzf_key_bindings.zsh"
 
 # PATH
-PATH=$PATH:$HOME/.config/dwm
+PATH=$PATH:$HOME/.local/scripts
 
 # autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

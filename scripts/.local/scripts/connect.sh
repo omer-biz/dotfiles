@@ -17,6 +17,6 @@ echo "password(copied to clipboard): $password"
 echo "$password" | xclip -selection clip
 rm "img.png"
 
-sudo openvpn --config "vpn/vpnbook-fr8-udp25000.ovpn"
+doas openvpn --config "vpn/vpnbook-fr8-udp25000.ovpn"
 
 rm -rf "vpn/"

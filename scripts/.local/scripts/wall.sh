@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# replaced this script with
+# `feh -z --bg-scale`
+# the `-z` will take of the 
+# randomization now
+
 wallpapers=~/.wall
 wal_num=$(ls $wallpapers | wc -l)
 rand=$(echo $RANDOM % $wal_num | bc)

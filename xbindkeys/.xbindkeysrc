@@ -102,6 +102,8 @@
 "$HOME/.local/scripts/mount.sh"
 	Control+Alt+ m
 
+"$HOME/.local/scripts/power_opts.sh"
+	Control+ q
 # kill compositor
 # "kill $(pidof picom); notify-send 'killed compositor'"
 "$HOME/.local/scripts/toggle_picom.sh"
@@ -112,11 +114,15 @@
 
 # screenshots
 # "shotgun ~/pictures/screenshots/$(date '+%b_%d_%I:%M_%p').png"
-"flameshot gui"
+"flameshot& flameshot gui"
 	Print
 
 # "pcmanfm"
 # 	Shift+Alt + f
+#
+
+"firefox"
+	Shift+Alt + b
 
 # "~/.local/bin/wall.sh"
 "feh -z --bg-scale $HOME/wallpapers"

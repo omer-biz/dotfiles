@@ -15,5 +15,10 @@ alias \
 
 alias \
 	gs="git status" \
-	gca="git commit -a "
+	gca="git commit -a " \
+	gp="git push"
 
+
+# editor
+alias \
+	n="nvim"

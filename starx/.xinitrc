@@ -29,8 +29,8 @@ wmname compiz
 # notification
 dunst &
 
-nm-applet &
-flameshot &
+# nm-applet &
+# flameshot &
 
 # autolock screen
 # xautolock -time 5 -locker slock

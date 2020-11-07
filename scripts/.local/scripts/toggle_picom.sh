@@ -7,7 +7,7 @@ then
 	picom&
 	notify-send 'compositor on'
 else
-	pkill picom
+	kill $(pidof picom)
 	notify-send 'compositor off'
 fi
 

@@ -1,5 +1,5 @@
 # compositor
-picom &
+# picom &
 
 # choose wallpapers randomly
 # feh -z --bg-scale $HOME/wallpapers

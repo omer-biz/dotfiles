@@ -26,11 +26,15 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 call plug#end()
 
-" markdown
+" markdown preview
 let g:mkdp_auto_start = 1
 let g:mkdp_auto_close = 1
 let g:mkdp_command_for_global = 1
 let g:mkdp_browser = 'qutebrowser'
+
+"markdown
+let g:vim_markdown_strikethrough = 1
+
 colorscheme gruvbox 
 set background=dark 
 
@@ -65,3 +69,4 @@ set clipboard+=unnamedplus
 " let g:airline#extensions#tabline#enabled = 1
 let g:airline_detect_spell=0
 let g:airline_detect_spelllang=0
+set noshowmode

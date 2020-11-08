@@ -9,7 +9,8 @@ alias \
 	diff="diff --color=auto" \
 
 alias \
-	cf="cd dotfiles/scripts/.local/scripts/"
+	cf="cd $HOME/dotfiles/scripts/.local/scripts/" \
+	info="info --vi-keys"
 
 # git alias
 

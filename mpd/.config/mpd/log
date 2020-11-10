@@ -1,0 +1,17 @@
+Nov 09 13:09 : exception: Failed to open '/home/omer/.config/mpd/state': No such file or directory
+Nov 09 13:10 : update: added /music.mp3
+Nov 10 13:53 : exception: Failed to open '/home/omer/.config/mpd/state': No such file or directory
+Nov 10 13:57 : exception: Failed to open '/home/omer/.config/mpd/state': No such file or directory
+Nov 10 13:57 : exception: Failed to open '/home/omer/.config/mpd/state': No such file or directory
+Nov 10 13:58 : exception: Failed to open '/home/omer/.config/mpd/state': No such file or directory
+Nov 10 14:00 : player: played "music.mp3"
+Nov 10 14:01 : player: played "music.mp3"
+Nov 10 14:06 : exception: Failed to commit /home/omer/.config/mpd/state: File exists
+Nov 10 14:06 : exception: Failed to commit /home/omer/.config/mpd/state: File exists
+Nov 10 14:06 : player: played "music.mp3"
+Nov 10 14:08 : player: played "music.mp3"
+Nov 10 14:13 : player: played "music.mp3"
+Nov 10 14:15 : player: played "music.mp3"
+Nov 10 14:21 : player: played "music.mp3"
+Nov 10 14:22 : player: played "music.mp3"
+Nov 10 14:23 : player: played "music.mp3"

@@ -10,7 +10,10 @@ alias \
 
 alias \
 	cf="cd $HOME/dotfiles/scripts/.local/scripts/" \
-	info="info --vi-keys"
+	info="info --vi-keys" \
+	za="zathura" \
+	re="n $HOME/reminder.md" \
+	sc="doas make clean install"
 
 # git alias
 

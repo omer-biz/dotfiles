@@ -27,7 +27,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 call plug#end()
 
 " markdown preview
-let g:mkdp_auto_start = 1
+let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_command_for_global = 1
 let g:mkdp_browser = 'qutebrowser'

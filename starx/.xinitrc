@@ -3,9 +3,10 @@
 
 # choose wallpapers randomly
 # feh -z --bg-scale $HOME/wallpapers
-feh -z --bg-scale $HOME/wallpapers/wallhaven-lm6lr2_1920x1080.png
+feh -z --bg-scale $HOME/wallpapers/wallhaven-48omy1_1920x1080.png
 
-# nitrogen --random --restore
+# music player
+# mpd
 
 # x resources !!?
 xrdb ~/.Xresources

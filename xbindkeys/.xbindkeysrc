@@ -74,7 +74,6 @@
 "amixer set Master 5%+; pkill -RTMIN+23 dwmblocks" 
 	XF86AudioRaiseVolume
 
-
 "amixer set Master 5%-; pkill -RTMIN+23 dwmblocks"
 	XF86AudioLowerVolume
 
@@ -98,12 +97,17 @@
 "slock"
 	Control+Alt + l
 
-# mount devce
+# mount device
 "$HOME/.local/scripts/mount.sh"
 	Control+Alt+ m
 
+# unmount device
+"$HOME/.local/scripts/unmount.sh"
+	Control+Alt+ u
+
 "$HOME/.local/scripts/power_opts.sh"
 	Control+ q
+
 # kill compositor
 # "kill $(pidof picom); notify-send 'killed compositor'"
 "$HOME/.local/scripts/toggle_picom.sh"
@@ -120,6 +124,10 @@
 # "pcmanfm"
 # 	Shift+Alt + f
 #
+
+# pulsemixer, the key binding doesn't make sense but it's all I've got
+"st -e pulsemixer"
+	Alt + q
 
 "firefox"
 	Shift+Alt + b

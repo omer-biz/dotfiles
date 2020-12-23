@@ -8,12 +8,19 @@ alias \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 
+
+# general
 alias \
 	cf="cd $HOME/dotfiles/scripts/.local/scripts/" \
 	info="info --vi-keys" \
 	za="zathura" \
-	re="n $HOME/reminder.md" \
-	sc="doas make clean install"
+	re="nvim $HOME/.reminder.md" \
+	sc="sudo make clean install" \
+	ir="ps aux | grep -v grep | grep " \
+    blf="redshift -l 42.13:9.30 -t 5700:3600 -g 0.8"
+
+alias \
+    sr="pacman -Ss "
 
 # git alias
 
@@ -25,4 +32,4 @@ alias \
 
 # editor
 alias \
-	n="nvim"
+	n="nvim -u $HOME/.config/nvim/lite_init.vim"

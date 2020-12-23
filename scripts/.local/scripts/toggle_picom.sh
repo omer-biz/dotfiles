@@ -5,9 +5,9 @@ pi_status=$(ps aux | grep " picom$")
 if [[ -z $pi_status ]] 
 then
 	picom&
-	notify-send 'compositor on'
+	notify-send 'Compositor On'
 else
 	kill $(pidof picom)
-	notify-send 'compositor off'
+	notify-send 'Compositor Off'
 fi
 

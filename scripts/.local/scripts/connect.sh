@@ -1,6 +1,6 @@
 #!/bin/sh
 
-vpn_link="https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-FR8.zip"
+vpn_link="https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-CA198.zip"
 img_link="https://www.vpnbook.com/password.php?t=0.78488200%201602952410"
 
 curl -o "vpn.zip" $vpn_link
@@ -17,6 +17,6 @@ echo "password(copied to clipboard): $password"
 echo "$password" | xclip -selection clip
 rm "img.png"
 
-doas openvpn --config "vpn/vpnbook-fr8-udp25000.ovpn"
+doas openvpn --config "vpn/vpnbook-ca198-udp25000.ovpn"
 
 rm -rf "vpn/"

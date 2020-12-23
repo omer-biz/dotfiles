@@ -2,3 +2,6 @@ mpd/.config/mpd/database
 mpd/.config/mpd/state
 mpd/.config/mpd/pid
 mpd/.config/mpd/playlist/**
+mpd/.config/mpd/log
+neovim/.config/nvim/.netrwhist
+neovim/.config/nvim/plugged/

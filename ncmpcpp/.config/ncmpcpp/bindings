@@ -190,8 +190,8 @@ def_key "shift-j"
 #def_key "end"
 #  move_end
 #
-#def_key "insert"
-#  select_item
+def_key "q"
+  select_item
 #
 #def_key "enter"
 #  enter_directory
@@ -214,8 +214,8 @@ def_key "shift-j"
 #def_key "space"
 #  toggle_visualization_type
 #
-#def_key "delete"
-#  delete_playlist_items
+def_key "d"
+  delete_playlist_items
 #
 #def_key "delete"
 #  delete_browser_items
@@ -538,6 +538,6 @@ def_key "shift-j"
 #def_key "ctrl-p"
 #  set_selected_items_priority
 #
-#def_key "q"
-#  quit
+def_key "escape"
+  quit
 #

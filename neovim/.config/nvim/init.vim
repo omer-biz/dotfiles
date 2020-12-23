@@ -1,5 +1,7 @@
 set number relativenumber
 
+let mapleader = ' '
+
 augroup numbertoggle
 	autocmd!
 	autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
@@ -23,25 +25,35 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'tpope/vim-commentary'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
+
+" uppercase a letter
+nmap <Leader>a vgU<Esc>
+nmap <Leader>A vgu<Esc>
 
 " markdown preview
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_command_for_global = 1
-let g:mkdp_browser = 'qutebrowser'
+" let g:mkdp_browser = 'qutebrowser'
+let g:mkdp_browser = 'firefox'
 
-"markdown
+" markdown
 let g:vim_markdown_strikethrough = 1
 
-colorscheme gruvbox 
-set background=dark 
+" vimwiki
+set nocompatible
+filetype plugin on
+syntax on
 
 set tabstop=4
 set shiftwidth=4
+set expandtab
 " set showtabline=2
-" set expandtab
 
 setlocal spell spelllang=en_us
 
@@ -51,7 +63,7 @@ hi Normal guibg=NONE ctermbg=NONE
 " no line wrap
 set nowrap
 
-nmap <Space> <C-w>
+nmap <Leader> <C-w>
 nmap <C-c> :ColorHighlight<CR>
 nmap ` :Fern . -drawer -toggle<CR>
 
@@ -59,10 +71,7 @@ nmap ` :Fern . -drawer -toggle<CR>
 imap <C-BS> <C-W>
 
 let g:fern#renderer = "nerdfont"
-let g:airline_theme = 'onedark'
-
-" use system clipboard
-set clipboard+=unnamedplus
+" let g:airline_theme = 'gruvbox'
 
 
 " airline config
@@ -70,3 +79,9 @@ set clipboard+=unnamedplus
 let g:airline_detect_spell=0
 let g:airline_detect_spelllang=0
 set noshowmode
+
+vnoremap <C-c> "*y :let @+=@*<CR>
+map <C-p> "+P
+
+colorscheme gruvbox 
+set background=dark 

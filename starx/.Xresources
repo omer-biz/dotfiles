@@ -1,10 +1,11 @@
-st.font: Ubuntu Mono:pixelsize=17:antialias=true:autohint=ture;
+st.font: Ubuntu Mono:pixelsize=16:antialias=true:autohint=ture;
 st.alpha: 0.9
 
 ! urxvt
 ckground: #282828
 ! soft contrast: 
-URxvt.background: #32302f
+! URxvt.background: #32302f
+URxvt.background: #282828
 URxvt.foreground: #ebdbb2
 ! Black + DarkGrey
 URxvt.color0:  #282828
@@ -31,17 +32,16 @@ URxvt.color14: #8ec07c
 URxvt.color7:  #a89984
 URxvt.color15: #ebdbb2
 
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher: firefox
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+
 
 ! font
-URxvt.font: xft:Ubuntu Mono:size-17,xft:Nerd Font
-
+URxvt.font: xft:Ubuntu Mono:pixelsize=17
+!URxvt.font: xft:Nerd Font:size-17,Mono
+URxvt.urgentBell: false
+URxvt.visualBell: true
 urxvt.scrollBar: false
-
-
-! dwm.showbar: 0
-dwm.selbgcolor: #fbf1c7
-dwm.selfgcolor: #32302f
-dwm.normbgcolor: #32302f
-dwm.normfgcolor: #fbf1c7
-dwm.selbordercolor: #fbf1c7
-dwm.normbordercolor: #282828

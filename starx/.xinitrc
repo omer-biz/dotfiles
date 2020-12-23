@@ -1,21 +1,21 @@
-# compositor
+# Compositor
 # picom &
 
-# choose wallpapers randomly
-# feh -z --bg-scale $HOME/wallpapers
-feh -z --bg-scale $HOME/wallpapers/wallhaven-48omy1_1920x1080.png
-
-# music player
-# mpd
-
-# x resources !!?
+# x resources
 xrdb ~/.Xresources
+
+# set brightness
+xbacklight -set 5
 
 # set mouse speed
 xinput set-prop "ETPS/2 Elantech Touchpad" 295 0.65
 
 # set touchpad tapping
-xinput set-prop "ETPS/2 Elantech Touchpad" 280 1
+xinput set-prop 11 327 1
+
+# resolution
+xrandr -s 1600x900
+xwallpaper --zoom "$HOME/.config/wall.jpg"
 
 # setup the bar
 dwmblocks &
@@ -23,26 +23,16 @@ dwmblocks &
 # set xorg shortcuts 
 xbindkeys --poll-rc
 
-# for java
-export AWT_TOOLKIT=MToolkit
-wmname compiz
 
-# notification
+# Notification
 dunst &
 
-# nm-applet &
-# flameshot &
+# This is the only place I could put this
+export QT_QPA_PLATFORMTHEME=qt5ct
+export AWT_TOOLKIT=MToolkit
 
-# autolock screen
-# xautolock -time 5 -locker slock
-
-# sxhkd &
-# bspwm
-
-
-# window manger
+# Start the manger
 while true; do
-# logging errors
- dwm 2> ~/.dwm.log
+    # logging errors
+    dwm 2> ~/.dwm.log
 done
-	

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+prog="$(/usr/bin/ls -1 $HOME/.local/scripts | fzf --height 70% --preview="nvim $HOME/.local/scripts/{}")"
+[[ -n $prog ]] && nvim "$HOME/.local/scripts/$prog"

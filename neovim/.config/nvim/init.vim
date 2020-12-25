@@ -57,8 +57,6 @@ set expandtab
 
 setlocal spell spelllang=en_us
 
-" transparent background
-hi Normal guibg=NONE ctermbg=NONE
 
 " no line wrap
 set nowrap
@@ -67,12 +65,11 @@ nmap <Leader> <C-w>
 nmap <C-c> :ColorHighlight<CR>
 nmap ` :Fern . -drawer -toggle<CR>
 
-"  Ctlr-Bs
-imap <C-BS> <C-W>
+" delete a word
+imap <C-i> <ESC>dawa
 
 let g:fern#renderer = "nerdfont"
 " let g:airline_theme = 'gruvbox'
-
 
 " airline config
 " let g:airline#extensions#tabline#enabled = 1
@@ -85,3 +82,10 @@ map <C-p> "+P
 
 colorscheme gruvbox 
 set background=dark 
+
+" transparent background
+hi Normal guibg=NONE ctermbg=NONE
+
+" taking screenshots and inserting them markdown style :)
+nnoremap <C-s> :!$HOME/.local/scripts/screenshot.sh<CR><CR>i![](<ESC>"*pA)<Home><Right><Right>
+

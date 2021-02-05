@@ -5,3 +5,5 @@ mpd/.config/mpd/playlist/**
 mpd/.config/mpd/log
 neovim/.config/nvim/.netrwhist
 neovim/.config/nvim/plugged/
+mpv/.config/mpv/watch_later/**
+mpv/.config/mpv/watch_later

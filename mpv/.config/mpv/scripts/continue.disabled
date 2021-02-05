@@ -1,0 +1,18 @@
+function continue(event)
+    print("Start of Playback")
+end
+mp.register_event("file-loaded", continue)
+
+function end_file(event)
+    print("This is the end of a file")
+end
+mp.register_event("end-file", end_file)
+
+function quit_file(event)
+    print("This is qutting the file")
+end
+mp.register_event("shutdown", quit_file)
+-- events needed
+-- end-file
+-- file-loaded
+-- shutdown

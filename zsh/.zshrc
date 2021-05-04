@@ -1,8 +1,9 @@
+#source "$HOME/.ohmyzsh.zsh"
 # Luke's config for the Zoomer Shell
 # bindkey -s '^m' "lf /run/media/omer/\n"
 # Enable colors and change prompt:
 autoload -U colors && colors
-# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%1d%{$fg[red]%}]%{$reset_color%}$%b "
+#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%1d%{$fg[red]%}]%{$reset_color%}$%b "
 
 # History in cache directory:
 HISTSIZE=10000
@@ -59,19 +60,19 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 #     fi
 # }
 # bindkey -s '^o' 'lfcd\n'
-bindkey -s '^o' "ranger /run/media/omer/\n"
+bindkey -s '^o' "ranger\n"
 
 
 # Edit line in vim with ctrl-e:
-autoload edit-command-line; zle -N edit-command-line
-bindkey '^e' edit-command-line
+# autoload edit-command-line; zle -N edit-command-line
+# bindkey '^e' edit-command-line
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/zsh/shortcutrc" ] && source "$HOME/.config/zsh/shortcutrc"
 [ -f "$HOME/.config/zsh/aliasrc" ] && source "$HOME/.config/zsh/aliasrc"
 
 # fzf
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+export FZF_DEFAULT_OPTS='--height 85% --layout=reverse --border'
 
 [ -f "$HOME/.config/zsh/fzf_completion.zsh" ] && source "$HOME/.config/zsh/fzf_completion.zsh"
 [ -f "$HOME/.config/zsh/fzf_key_bindings.zsh" ] && source "$HOME/.config/zsh/fzf_key_bindings.zsh"
@@ -79,12 +80,31 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 # PATH
 PATH=$PATH:$HOME/.local/scripts
 
+# z.lua
+eval "$(lua /usr/share/z.lua/z.lua --init zsh)"
+
+# starship
+eval "$(starship init zsh)"
+
+# Dynamic window title with zsh shell.
+# Shows current directory and running (multi-line) command.
+
+case "$TERM" in (rxvt|rxvt-*|st|st-*|*xterm*|(dt|k|E)term)
+    local term_title () { print -n "\e]0;${(j: :q)@}\a" }
+    precmd () {
+      local DIR="$(print -P "[%~]%#")"
+      term_title "$DIR" "zsh"
+    }
+    preexec () {
+      local DIR="$(print -P "[%~]%#")"
+      local CMD="${(j:\n:)${(f)1}}"
+      term_title "$DIR" "$CMD"
+    }
+  ;;
+esac
+
 # autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# theme
-# [ -f "$HOME/.config/zsh/awesomepanda.zsh" ] && source "$HOME/.config/zsh/awesomepanda.zsh"
-
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-
